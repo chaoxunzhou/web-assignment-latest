@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h1>Register</h1>
+        <p>firstname
+        <input type="text" name="first_name" id="first_name">
+        </p>
+        <p>lastname
+        <input type="text" name="last_name" id="last_name">
+        </p>
+        <p>username
+        <input type="text" name="username" id="username">
+        </p>
+        <p>username
+        <input type="text" name="password" id="password">
+        </p>
+        <p>email
+        <input type="email" name="email" id="email">
+        </p>
+
+        <button type="button" onclick="onRegisterClick()">submit</button>
+
+        <script >
+            {% include "gateway/register.js" %}
+        </script>
+
+    </body>
+</html>

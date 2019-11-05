@@ -1,0 +1,26 @@
+<!-- homepage/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>indoor | Home</title>
+</head>
+<body>
+  <script>
+      {% include "dashbord/dashbord.js" %}
+  </script>
+
+  <h1>indoor air dashbord</h1>
+  <p>Welcome to your dashbord. your average are:</p>
+
+  <p>average temperature is</p>
+  <p id = "avg_temperature">---</p>
+  <p>average humidity is</p>
+  <p  id = "avg_humidity"></p>
+  <p>average co2 is</p>
+  <p id = "avg_co2"></p>
+  <p id = "avg_pressure">average pressure is</p>
+  <p id = "avg_avg_TVOC">average TVOC is</p>
+
+  <a href = "{% url instrument/create.html %}"></a>
+</body>
+</html>
